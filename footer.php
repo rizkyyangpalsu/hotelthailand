@@ -6,7 +6,7 @@
                     <div class="footer-widget">
                         <h3>About Us</h3>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s.</p>
+                            been the industry's standard dummy text ever since the 1500sadsasdsadas.</p>
 
                     </div>
                 </div>
