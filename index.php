@@ -1,76 +1,4 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Smesa Hotel - SMK Negeri 1 Surabaya</title>
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="styles/bootstrap.min.css">
-    <!-- Animate -->
-    <link rel="stylesheet" href="styles/animate.css">
-    <!-- Venobox -->
-    <link rel="stylesheet" href="styles/venobox.css">
-
-    <!-- fonts -->
-    <link href="fonts/font-awesome/css/fontawesome.css" rel="stylesheet">
-    <link rel="stylesheet" href="fonts/flaticon/css/flaticon.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,600,700,800,900" rel="stylesheet">
-    <!-- Main Css -->
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
-
-<!--Preload-->
-<div class="preloader">
-    <div class="preloader_image">
-        <div class="sk-double-bounce">
-            <div class="sk-child sk-double-bounce1"></div>
-            <div class="sk-child sk-double-bounce2"></div>
-        </div>
-    </div>
-</div>
-
-<nav class="navbar navbar-expand-lg bg-white">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">
-            <img src="img/logo.png" alt="Logo">
-        </a>
-        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#main-nav"
-                aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="main-nav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about-us.html">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="tours.html">Tours</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="destinations.html">Destinations</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="hotels.html">Hotels</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="gallery.html">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="blog.html">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact-us.html">Contact Us</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+<?php include_once 'navbar.php'?>
 <!-- end nav -->
 
 <section>
@@ -413,13 +341,13 @@
                 <div class="hotel-item wow fadeIn">
                     <div class="media">
                         <div class="thumb">
-                            <a href="hotel-single.html">
+                            <a href="deluxe-room.php">
                                 <img src="assets/images/r1.jpg" alt="">
                             </a>
                         </div>
                         <div class="media-body">
                             <div class="hotel-info">
-                                <h3><a href="hotel-single.html">Herta Berlin Hotel</a></h3>
+                                <h3><a href="deluxe-room.php">Deluxe Room</a></h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing Suscipit tas aperiam.</p>
                                 <div class="hotel-price">$150.00
                                     <small>- Per Night</small>
@@ -438,7 +366,7 @@
                         </div>
                         <div class="media-body">
                             <div class="tour-info">
-                                <h3><a href="hotel-single.html">Herta Berlin Hotel</a></h3>
+                                <h3><a href="hotel-single.html">Luxury Room</a></h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing Suscipit tas aperiam.</p>
                                 <div class="hotel-price">$150.00
                                     <small>- Per Night</small>
@@ -459,7 +387,7 @@
                         </div>
                         <div class="media-body">
                             <div class="tour-info">
-                                <h3><a href="hotel-single.html">Herta Berlin Hotel</a></h3>
+                                <h3><a href="hotel-single.html">Guest House</a></h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing Suscipit tas aperiam.</p>
                                 <div class="hotel-price">$150.00
                                     <small>- Per Night</small>
@@ -477,7 +405,7 @@
                         </div>
                         <div class="media-body">
                             <div class="tour-info">
-                                <h3><a href="hotel-single.html">Herta Berlin Hotel</a></h3>
+                                <h3><a href="hotel-single.html">Single Room</a></h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing Suscipit tas aperiam.</p>
                                 <div class="hotel-price">$150.00
                                     <small>- Per Night</small>
@@ -548,92 +476,5 @@
 </section>
 <!-- Testimonials -->
 
-<footer id="footer">
-    <div class="footer-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="footer-widget">
-                        <h3>About Us</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s.</p>
-
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="footer-widget">
-                        <h3>Quick Links</h3>
-                        <ul>
-                            <li><a href="about-us.html">About Us</a></li>
-                            <li><a href="tours.html">Tours</a></li>
-                            <li><a href="gallery.html">Gallery</a></li>
-                            <li><a href="contact-us.html">Contact Us</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="footer-widget">
-                        <h3>Contact Info</h3>
-                        <ul>
-                            <li><i class="fa fa-send" aria-hidden="true"></i> 3481 Rabana Place, 2090</li>
-                            <li><i class="fa fa-phone" aria-hidden="true"></i> +880 17980XXXXX</li>
-                            <li><i class="fa fa-envelope-o" aria-hidden="true"></i> info@example.com</li>
-                            <li><i class="fa fa-fax" aria-hidden="true"></i> Fax : 02 9635 0247</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="footer-widget">
-                        <h3>Business hour</h3>
-                        <ul class="bussiness-hour">
-                            <li>Monday-Friday: <span class="pull-right">9am - 5pm.</span></li>
-                            <li>Saturday: <span class="pull-right">10am - 2pm.</span></li>
-                            <li>Sunday: <span class="pull-right">Closed.</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-6">
-                    <div class="copyright">
-                        <p>Copyright &copy; 2018. All rights reserved.</p>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                    <ul class="social-icons pull-right">
-                        <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
+<?php include_once 'footer.php'?>
 <!-- end footer -->
-
-<!-- Bact to top -->
-<div class="back-top">
-    <a href="#"><i class="fa fa-angle-up"></i></a>
-</div>
-
-
-<script src="scripts/jquery-3.3.1.min.js"></script>
-<script src="scripts/popper.min.js"></script>
-<script src="scripts/bootstrap.min.js"></script>
-<script src="scripts/jquery.easing.min.js"></script>
-<script src="scripts/wow.js"></script>
-<script src="scripts/venobox.min.js"></script>
-<script src="scripts/SmoothScroll.js"></script>
-<script src="scripts/jquery.filterizr.min.js"></script>
-<script src="scripts/sticky-kit.min.js"></script>
-<script src="scripts/form-validator.min.js"></script>
-<script src="scripts/contact-form-script.js"></script>
-<script src="scripts/script.js"></script>
-</body>
-</html>
