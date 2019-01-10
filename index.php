@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles/venobox.css">
 
     <!-- fonts -->
-    <link rel="stylesheet" href="fonts/font-awesome/css/fontawesome.min.css">
+    <link href="fonts/font-awesome/css/fontawesome.css" rel="stylesheet">
     <link rel="stylesheet" href="fonts/flaticon/css/flaticon.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,600,700,800,900" rel="stylesheet">
     <!-- Main Css -->
@@ -37,7 +37,8 @@
         <a class="navbar-brand" href="index.html">
             <img src="img/logo.png" alt="Logo">
         </a>
-        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#main-nav"
+                aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="main-nav">
@@ -72,64 +73,9 @@
 </nav>
 <!-- end nav -->
 
-<section class="carousel slide" id="banner" data-ride="carousel" data-pause="false">
-    <div class="carousel-inner">
-        <div class="carousel-item active" style="background-image:url(img/banner/slide-1.jpg)">
-            <div class="banner-caption">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="hero-text">
-                                <h6 class="animated fadeInDown">Consetetur Adipiscing</h6>
-                                <h1 class="animated fadeInUp">Best travel agency</h1>
-                                <p class="animated fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt ullamcorper magna, in tincidunt ex auctor et.</p>
-                                <a href="contact-us.html" class="btn btn-primary animated fadeInUp">Contact Us</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="carousel-item" style="background-image:url(img/banner/slide-2.jpg)">
-            <div class="banner-caption">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="hero-text">
-                                <h6 class="animated fadeInLeft">Consetetur Adipiscing</h6>
-                                <h1 class="animated fadeInLeft">Trusted Travel Agency</h1>
-                                <p class="animated fadeInLeft">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt ullamcorper magna, in tincidunt ex auctor et.</p>
-                                <a href="contact-us.html" class="btn btn-primary animated fadeInLeft">Contact Us</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="carousel-item" style="background-image:url(img/banner/slide-3.jpg)">
-            <div class="banner-caption">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="hero-text">
-                                <h6 class="animated fadeInRight">Consetetur Adipiscing</h6>
-                                <h1 class="animated fadeInRight">Get Exclusive Tour</h1>
-                                <p class="animated fadeInRight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt ullamcorper magna, in tincidunt ex auctor et.</p>
-                                <a href="contact-us.html" class="btn btn-primary animated fadeInRight">Contact Us</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <ol class="carousel-indicators">
-            <li data-target="#banner" data-slide-to="0" class="active"></li>
-            <li data-target="#banner" data-slide-to="1"></li>
-            <li data-target="#banner" data-slide-to="2"></li>
-        </ol>
+<section>
+    <div class="slider">
+        <video src="assets/video/banner.mp4" class="video" style="width: 100%;" muted loop autoplay></video>
     </div>
 </section>
 <!-- end banner -->
@@ -140,58 +86,32 @@
             <div class="col-md-12">
                 <div class="section-title text-center">
                     <h2><span>Our Services</span></h2>
-                    <p>Sorem ipsum dolor sit amet, consectetur adipisicing Suscipit votas aperiam Sorem ipsum dolor consectur adipisicing elit.</p>
+                    <p>Sorem ipsum dolor sit amet, consectetur adipisicing Suscipit votas aperiam Sorem ipsum dolor
+                        consectur adipisicing elit.</p>
                 </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-6 col-md-6 col-lg-4">
-                <div class="service-item text-center wow fadeIn">
-                    <div class="icon">
-                        <i class="flaticon-train"></i>
-                    </div>
-                    <h3>Rail Booking</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sollicitudin lobortis turpis, sit amet aliquet metus.</p>
-                </div>
-            </div>
 
             <div class="col-sm-6 col-md-6 col-lg-4">
                 <div class="service-item text-center wow fadeIn">
                     <div class="icon">
                         <i class="flaticon-slumber"></i>
                     </div>
-                    <h3>Hotel Booking</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sollicitudin lobortis turpis, sit amet aliquet metus.</p>
+                    <h3>Master Bedrooms</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sollicitudin lobortis turpis,
+                        sit amet aliquet metus.</p>
                 </div>
             </div>
 
             <div class="col-sm-6 col-md-6 col-lg-4">
                 <div class="service-item text-center wow fadeIn">
                     <div class="icon">
-                        <i class="flaticon-air-freight"></i>
+                        <i class="flaticon-play-button"></i>
                     </div>
-                    <h3>Flight Booking</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sollicitudin lobortis turpis, sit amet aliquet metus.</p>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-6 col-lg-4">
-                <div class="service-item text-center wow fadeIn">
-                    <div class="icon">
-                        <i class="flaticon-tag"></i>
-                    </div>
-                    <h3>Ticket Booking</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sollicitudin lobortis turpis, sit amet aliquet metus.</p>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-6 col-lg-4">
-                <div class="service-item text-center wow fadeIn">
-                    <div class="icon">
-                        <i class="flaticon-ship"></i>
-                    </div>
-                    <h3>Cruises Booking</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sollicitudin lobortis turpis, sit amet aliquet metus.</p>
+                    <h3>Playground</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sollicitudin lobortis turpis,
+                        sit amet aliquet metus.</p>
                 </div>
             </div>
 
@@ -200,8 +120,9 @@
                     <div class="icon">
                         <i class="flaticon-house"></i>
                     </div>
-                    <h3>Amazing Tour</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sollicitudin lobortis turpis, sit amet aliquet metus.</p>
+                    <h3>Sea View Balcon</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sollicitudin lobortis turpis,
+                        sit amet aliquet metus.</p>
                 </div>
             </div>
         </div>
@@ -209,178 +130,178 @@
 </section>
 <!-- end services -->
 
-<section class="section-spacing inverse-bg">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-title text-center">
-                    <h2><span>Featured tours</span></h2>
-                    <p>Sorem ipsum dolor sit amet, consectetur adipisicing Suscipit votas aperiam Sorem ipsum dolor consectur adipisicing elit.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12 col-lg-12 col-xl-6">
-                <div class="tour-item wow fadeIn">
-                    <div class="thumb">
-                        <a href="tour-single.html">
-                            <img src="img/tour/1.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="tour-info">
-                        <h3><a href="tour-single.html">Week at Sunny Beach</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing Suscipit tas aperiam Sorem ipsum dolor consectur adipisicing. Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                        <div class="tour-price">$650.00 <small>- 2 days 3 nights</small></div>
-                        <div class="tour-location"><span>Tour in Croatia</span></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12 col-lg-12 col-xl-6">
-                <div class="tour-item wow fadeIn">
-                    <div class="media">
-                        <div class="thumb">
-                            <a href="tour-single.html">
-                                <img src="img/tour/2.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <div class="tour-info">
-                                <h3><a href="tour-single.html">Week at Sunny Beach</a></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing Suscipit tas aperiam.</p>
-                                <div class="tour-price">$550.00 <small>- 2 days 3 nights</small></div>
-                                <div class="tour-location"><span>Tour in Istanbul</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tour-item wow fadeIn">
-                    <div class="media">
-                        <div class="thumb">
-                            <a href="tour-single.html">
-                                <img src="img/tour/3.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <div class="tour-info">
-                                <h3><a href="tour-single.html">Week at Sunny Beach</a></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing Suscipit tas aperiam.</p>
-                                <div class="tour-price">$950.00 <small>- 2 days 3 nights</small></div>
-                                <div class="tour-location"><span>Tour in Sydney</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<!--<section class="section-spacing inverse-bg">-->
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-12">-->
+<!--                <div class="section-title text-center">-->
+<!--                    <h2><span>Featured tours</span></h2>-->
+<!--                    <p>Sorem ipsum dolor sit amet, consectetur adipisicing Suscipit votas aperiam Sorem ipsum dolor consectur adipisicing elit.</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!---->
+<!--        <div class="row">-->
+<!--            <div class="col-md-12 col-lg-12 col-xl-6">-->
+<!--                <div class="tour-item wow fadeIn">-->
+<!--                    <div class="thumb">-->
+<!--                        <a href="tour-single.html">-->
+<!--                            <img src="img/tour/1.jpg" alt="">-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                    <div class="tour-info">-->
+<!--                        <h3><a href="tour-single.html">Week at Sunny Beach</a></h3>-->
+<!--                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing Suscipit tas aperiam Sorem ipsum dolor consectur adipisicing. Lorem ipsum dolor sit amet, consectetur adipisicing.</p>-->
+<!--                        <div class="tour-price">$650.00 <small>- 2 days 3 nights</small></div>-->
+<!--                        <div class="tour-location"><span>Tour in Croatia</span></div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-md-12 col-lg-12 col-xl-6">-->
+<!--                <div class="tour-item wow fadeIn">-->
+<!--                    <div class="media">-->
+<!--                        <div class="thumb">-->
+<!--                            <a href="tour-single.html">-->
+<!--                                <img src="img/tour/2.jpg" alt="">-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                        <div class="media-body">-->
+<!--                            <div class="tour-info">-->
+<!--                                <h3><a href="tour-single.html">Week at Sunny Beach</a></h3>-->
+<!--                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing Suscipit tas aperiam.</p>-->
+<!--                                <div class="tour-price">$550.00 <small>- 2 days 3 nights</small></div>-->
+<!--                                <div class="tour-location"><span>Tour in Istanbul</span></div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!---->
+<!--                <div class="tour-item wow fadeIn">-->
+<!--                    <div class="media">-->
+<!--                        <div class="thumb">-->
+<!--                            <a href="tour-single.html">-->
+<!--                                <img src="img/tour/3.jpg" alt="">-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                        <div class="media-body">-->
+<!--                            <div class="tour-info">-->
+<!--                                <h3><a href="tour-single.html">Week at Sunny Beach</a></h3>-->
+<!--                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing Suscipit tas aperiam.</p>-->
+<!--                                <div class="tour-price">$950.00 <small>- 2 days 3 nights</small></div>-->
+<!--                                <div class="tour-location"><span>Tour in Sydney</span></div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
 <!-- end featured tour -->
 
-<section class="section-spacing">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-title text-center">
-                    <h2><span>Popular Destination</span></h2>
-                    <p>Sorem ipsum dolor sit amet, consectetur adipisicing Suscipit votas aperiam Sorem ipsum dolor consectur adipisicing elit.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12 col-lg-6">
-                <div class="destination-item wow fadeIn">
-                    <a href="destination-single.html">
-                        <img src="img/destination/1.jpg" alt="">
-                        <div class="destination-info">
-                            <h2>Croatia</h2>
-                            <h3>120+ Tours</h3>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-12 col-lg-6">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="destination-item wow fadeIn">
-                            <a href="destination-single.html">
-                                <img src="img/destination/2.jpg" alt="">
-                                <div class="destination-info">
-                                    <h2>Italy</h2>
-                                    <h3>35+ Tours</h3>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="destination-item wow fadeIn">
-                            <a href="destination-single.html">
-                                <img src="img/destination/3.jpg" alt="">
-                                <div class="destination-info">
-                                    <h2>Istanbul</h2>
-                                    <h3>50+ Tours</h3>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="row">
-            <div class="col-md-12 col-lg-6">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="destination-item wow fadeIn">
-                            <a href="destination-single.html">
-                                <img src="img/destination/4.jpg" alt="">
-                                <div class="destination-info">
-                                    <h2>Singapore</h2>
-                                    <h3>35+ Tours</h3>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="destination-item wow fadeIn">
-                            <a href="destination-single.html">
-                                <img src="img/destination/5.jpg" alt="">
-                                <div class="destination-info">
-                                    <h2>Sydney</h2>
-                                    <h3>50+ Tours</h3>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-12 col-lg-6">
-                <div class="destination-item wow fadeIn">
-                    <a href="destination-single.html">
-                        <img src="img/destination/6.jpg" alt="">
-                        <div class="destination-info">
-                            <h2>Dubai</h2>
-                            <h3>120+ Tours</h3>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <div class="text-center mt-40">
-                    <a href="destinations.html" class="btn btn-primary">All Destinations</a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
+<!--<section class="section-spacing">-->
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-12">-->
+<!--                <div class="section-title text-center">-->
+<!--                    <h2><span>Popular Destination</span></h2>-->
+<!--                    <p>Sorem ipsum dolor sit amet, consectetur adipisicing Suscipit votas aperiam Sorem ipsum dolor consectur adipisicing elit.</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!---->
+<!--        <div class="row">-->
+<!--            <div class="col-md-12 col-lg-6">-->
+<!--                <div class="destination-item wow fadeIn">-->
+<!--                    <a href="destination-single.html">-->
+<!--                        <img src="img/destination/1.jpg" alt="">-->
+<!--                        <div class="destination-info">-->
+<!--                            <h2>Croatia</h2>-->
+<!--                            <h3>120+ Tours</h3>-->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-md-12 col-lg-6">-->
+<!--                <div class="row">-->
+<!--                    <div class="col-md-12">-->
+<!--                        <div class="destination-item wow fadeIn">-->
+<!--                            <a href="destination-single.html">-->
+<!--                                <img src="img/destination/2.jpg" alt="">-->
+<!--                                <div class="destination-info">-->
+<!--                                    <h2>Italy</h2>-->
+<!--                                    <h3>35+ Tours</h3>-->
+<!--                                </div>-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-12">-->
+<!--                        <div class="destination-item wow fadeIn">-->
+<!--                            <a href="destination-single.html">-->
+<!--                                <img src="img/destination/3.jpg" alt="">-->
+<!--                                <div class="destination-info">-->
+<!--                                    <h2>Istanbul</h2>-->
+<!--                                    <h3>50+ Tours</h3>-->
+<!--                                </div>-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!---->
+<!--        </div>-->
+<!---->
+<!--        <div class="row">-->
+<!--            <div class="col-md-12 col-lg-6">-->
+<!--                <div class="row">-->
+<!--                    <div class="col-md-12">-->
+<!--                        <div class="destination-item wow fadeIn">-->
+<!--                            <a href="destination-single.html">-->
+<!--                                <img src="img/destination/4.jpg" alt="">-->
+<!--                                <div class="destination-info">-->
+<!--                                    <h2>Singapore</h2>-->
+<!--                                    <h3>35+ Tours</h3>-->
+<!--                                </div>-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-md-12">-->
+<!--                        <div class="destination-item wow fadeIn">-->
+<!--                            <a href="destination-single.html">-->
+<!--                                <img src="img/destination/5.jpg" alt="">-->
+<!--                                <div class="destination-info">-->
+<!--                                    <h2>Sydney</h2>-->
+<!--                                    <h3>50+ Tours</h3>-->
+<!--                                </div>-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!---->
+<!--            <div class="col-md-12 col-lg-6">-->
+<!--                <div class="destination-item wow fadeIn">-->
+<!--                    <a href="destination-single.html">-->
+<!--                        <img src="img/destination/6.jpg" alt="">-->
+<!--                        <div class="destination-info">-->
+<!--                            <h2>Dubai</h2>-->
+<!--                            <h3>120+ Tours</h3>-->
+<!--                        </div>-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!---->
+<!--        <div class="row">-->
+<!--            <div class="col-md-12">-->
+<!--                <div class="text-center mt-40">-->
+<!--                    <a href="destinations.html" class="btn btn-primary">All Destinations</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!---->
+<!--    </div>-->
+<!--</section>-->
 <!-- end destination -->
 
 <section class="section-spacing bottom-none inverse-bg">
@@ -389,88 +310,84 @@
             <div class="col-md-12">
                 <div class="section-title text-center">
                     <h2><span>Gallery</span></h2>
-                    <p>Sorem ipsum dolor sit amet, consectetur adipisicing Suscipit votas aperiam Sorem ipsum dolor consectur adipisicing elit.</p>
+                    <p>Sorem ipsum dolor sit amet, consectetur adipisicing Suscipit votas aperiam Sorem ipsum dolor
+                        consectur adipisicing elit.</p>
                 </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <ul id="filter-list">
-                    <li class="filter active" data-filter="all">All</li>
-                    <li class="filter" data-filter="1">Asia</li>
-                    <li class="filter" data-filter="2">Africa</li>
-                    <li class="filter" data-filter="3">Europe</li>
-                    <li class="filter" data-filter="4">America</li>
-                    <li class="filter" data-filter="5">Australia</li>
-                </ul><!-- @end #filter-list -->
             </div>
         </div>
     </div>
 
     <div class="gallery-outer">
         <ul class="gallery-items">
-            <li class="filtr-item" data-category ="1">
+            <li class="filtr-item" data-category="1">
                 <div class="gallery-inner">
-                    <img src="img/gallery/1.jpg" alt="" />
+                    <img src="assets/images/g1.jpg" alt=""/>
                     <div class="gallery-overlay">
-                        <a href="img/gallery/1.jpg" class="venobox" data-gall="gallery"><i class="fa fa-picture-o"></i></a>
+                        <a href="assets/images/g1.jpg" class="venobox" data-gall="gallery"><i
+                                    class="fa fa-picture-o"></i></a>
                     </div>
                 </div>
             </li>
-            <li class="filtr-item" data-category ="3">
+            <li class="filtr-item" data-category="3">
                 <div class="gallery-inner">
-                    <img src="img/gallery/2.jpg" alt="" />
+                    <img src="assets/images/g2.jpg" alt=""/>
                     <div class="gallery-overlay">
-                        <a href="img/gallery/2.jpg" class="venobox" data-gall="gallery"><i class="fa fa-picture-o"></i></a>
+                        <a href="assets/images/g2.jpg" class="venobox" data-gall="gallery"><i
+                                    class="fa fa-picture-o"></i></a>
                     </div>
                 </div>
             </li>
-            <li class="filtr-item" data-category ="2">
+            <li class="filtr-item" data-category="2">
                 <div class="gallery-inner">
-                    <img src="img/gallery/3.jpg" alt="" />
+                    <img src="assets/images/g3.jpg" alt=""/>
                     <div class="gallery-overlay">
-                        <a href="img/gallery/3.jpg" class="venobox" data-gall="gallery"><i class="fa fa-picture-o"></i></a>
+                        <a href="assets/images/g3.jpg" class="venobox" data-gall="gallery"><i
+                                    class="fa fa-picture-o"></i></a>
                     </div>
                 </div>
             </li>
-            <li class="filtr-item" data-category ="5">
+            <li class="filtr-item" data-category="5">
                 <div class="gallery-inner">
-                    <img src="img/gallery/4.jpg" alt="" />
+                    <img src="assets/images/g4.jpg" alt=""/>
                     <div class="gallery-overlay">
-                        <a href="img/gallery/4.jpg" class="venobox" data-gall="gallery"><i class="fa fa-picture-o"></i></a>
+                        <a href="assets/images/g4.jpg" class="venobox" data-gall="gallery"><i
+                                    class="fa fa-picture-o"></i></a>
                     </div>
                 </div>
             </li>
-            <li class="filtr-item" data-category ="2">
+            <li class="filtr-item" data-category="2">
                 <div class="gallery-inner">
-                    <img src="img/gallery/5.jpg" alt="" />
+                    <img src="assets/images/g5.jpg" alt=""/>
                     <div class="gallery-overlay">
-                        <a href="img/gallery/5.jpg" class="venobox" data-gall="gallery"><i class="fa fa-picture-o"></i></a>
+                        <a href="assets/images/g5.jpg" class="venobox" data-gall="gallery"><i
+                                    class="fa fa-picture-o"></i></a>
                     </div>
                 </div>
             </li>
-            <li class="filtr-item" data-category ="4">
+            <li class="filtr-item" data-category="4">
                 <div class="gallery-inner">
-                    <img src="img/gallery/6.jpg" alt="" />
+                    <img src="assets/images/g6.jpg" alt=""/>
                     <div class="gallery-overlay">
-                        <a href="img/gallery/6.jpg" class="venobox" data-gall="gallery"><i class="fa fa-picture-o"></i></a>
+                        <a href="assets/images/g6.jpg" class="venobox" data-gall="gallery"><i
+                                    class="fa fa-picture-o"></i></a>
                     </div>
                 </div>
             </li>
-            <li class="filtr-item" data-category ="5">
+            <li class="filtr-item" data-category="5">
                 <div class="gallery-inner">
-                    <img src="img/gallery/7.jpg" alt="" />
+                    <img src="assets/images/g7.jpg" alt=""/>
                     <div class="gallery-overlay">
-                        <a href="img/gallery/7.jpg" class="venobox" data-gall="gallery"><i class="fa fa-picture-o"></i></a>
+                        <a href="assets/images/g7.jpg" class="venobox" data-gall="gallery"><i
+                                    class="fa fa-picture-o"></i></a>
                     </div>
                 </div>
             </li>
-            <li class="filtr-item" data-category ="2">
+            <li class="filtr-item" data-category="2">
                 <div class="gallery-inner">
-                    <img src="img/gallery/8.jpg" alt="" />
+                    <img src="assets/images/g8.jpg" alt=""/>
                     <div class="gallery-overlay">
-                        <a href="img/gallery/8.jpg" class="venobox" data-gall="gallery"><i class="fa fa-picture-o"></i></a>
+                        <a href="assets/images/g8.jpg" class="venobox" data-gall="gallery"><i
+                                    class="fa fa-picture-o"></i></a>
                     </div>
                 </div>
             </li>
@@ -484,8 +401,9 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="section-title text-center">
-                    <h2><span>Popular hotels</span></h2>
-                    <p>Sorem ipsum dolor sit amet, consectetur adipisicing Suscipit votas aperiam Sorem ipsum dolor consectur adipisicing elit.</p>
+                    <h2><span>Room and Rates</span></h2>
+                    <p>Sorem ipsum dolor sit amet, consectetur adipisicing Suscipit votas aperiam Sorem ipsum dolor
+                        consectur adipisicing elit.</p>
                 </div>
             </div>
         </div>
@@ -496,14 +414,16 @@
                     <div class="media">
                         <div class="thumb">
                             <a href="hotel-single.html">
-                                <img src="img/hotel/1.jpg" alt="">
+                                <img src="assets/images/r1.jpg" alt="">
                             </a>
                         </div>
                         <div class="media-body">
                             <div class="hotel-info">
                                 <h3><a href="hotel-single.html">Herta Berlin Hotel</a></h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing Suscipit tas aperiam.</p>
-                                <div class="hotel-price">$150.00 <small>- Per Night</small></div>
+                                <div class="hotel-price">$150.00
+                                    <small>- Per Night</small>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -513,14 +433,16 @@
                     <div class="media">
                         <div class="thumb">
                             <a href="hotel-single.html">
-                                <img src="img/hotel/2.jpg" alt="">
+                                <img src="assets/images/r2.jpg" alt="">
                             </a>
                         </div>
                         <div class="media-body">
                             <div class="tour-info">
                                 <h3><a href="hotel-single.html">Herta Berlin Hotel</a></h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing Suscipit tas aperiam.</p>
-                                <div class="hotel-price">$150.00 <small>- Per Night</small></div>
+                                <div class="hotel-price">$150.00
+                                    <small>- Per Night</small>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -529,15 +451,39 @@
 
             <div class="col-md-12 col-lg-12 col-xl-6">
                 <div class="hotel-item wow fadeIn">
-                    <div class="thumb">
-                        <a href="hotel-single.html">
-                            <img src="img/hotel/3.jpg" alt="">
-                        </a>
+                    <div class="media">
+                        <div class="thumb">
+                            <a href="hotel-single.html">
+                                <img src="assets/images/r3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <div class="tour-info">
+                                <h3><a href="hotel-single.html">Herta Berlin Hotel</a></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing Suscipit tas aperiam.</p>
+                                <div class="hotel-price">$150.00
+                                    <small>- Per Night</small>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="hotel-info">
-                        <h3><a href="hotel-single.html">Herta Berlin Hotel</a></h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing Suscipit tas aperiam Sorem ipsum dolor consectur adipisicing. Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                        <div class="hotel-price">$150.00 <small>- Per Night</small></div>
+                </div>
+                <div class="hotel-item wow fadeIn">
+                    <div class="media">
+                        <div class="thumb">
+                            <a href="hotel-single.html">
+                                <img src="assets/images/r4.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <div class="tour-info">
+                                <h3><a href="hotel-single.html">Herta Berlin Hotel</a></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing Suscipit tas aperiam.</p>
+                                <div class="hotel-price">$150.00
+                                    <small>- Per Night</small>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -552,7 +498,8 @@
             <div class="col-md-12">
                 <div class="section-title text-center">
                     <h2><span>Tourist feedback</span></h2>
-                    <p>Sorem ipsum dolor sit amet, consectetur adipisicing Suscipit votas aperiam Sorem ipsum dolor consectur adipisicing elit.</p>
+                    <p>Sorem ipsum dolor sit amet, consectetur adipisicing Suscipit votas aperiam Sorem ipsum dolor
+                        consectur adipisicing elit.</p>
                 </div>
             </div>
         </div>
@@ -561,20 +508,25 @@
             <div class="col-md-12 col-lg-10 offset-lg-1">
                 <div class="testimonials-outer">
                     <div class="cover-img wow fadeIn">
-                        <img src="img/feedback/1.jpg" alt="">
+                        <img src="assets/images/feedback.jpg" alt="">
                     </div>
-                    <div id="reviews-carousel" class="carousel slide wow fadeInUp" data-ride="carousel" data-pause="false">
+                    <div id="reviews-carousel" class="carousel slide wow fadeInUp" data-ride="carousel"
+                         data-pause="false">
                         <span class="flaticon-quote"></span>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <h3>African Forest</h3>
                                 <h4>28 October, 2018</h4>
-                                <p>Duis non condimentum nunc. Nunc quis turpis eu est tincidunt rutrum. Cras a purus quis sem tincidunt egestas vel id lacus. Nunc sed volutpat erat. Duis sollicitudin.</p>
+                                <p>Duis non condimentum nunc. Nunc quis turpis eu est tincidunt rutrum. Cras a purus
+                                    quis sem tincidunt egestas vel id lacus. Nunc sed volutpat erat. Duis
+                                    sollicitudin.</p>
                             </div>
                             <div class="carousel-item">
                                 <h3>African Forest</h3>
                                 <h4>28 October, 2018</h4>
-                                <p>Duis non condimentum nunc. Nunc quis turpis eu est tincidunt rutrum. Cras a purus quis sem tincidunt egestas vel id lacus. Nunc sed volutpat erat. Duis sollicitudin.</p>
+                                <p>Duis non condimentum nunc. Nunc quis turpis eu est tincidunt rutrum. Cras a purus
+                                    quis sem tincidunt egestas vel id lacus. Nunc sed volutpat erat. Duis
+                                    sollicitudin.</p>
                             </div>
                         </div>
 
@@ -603,7 +555,8 @@
                 <div class="col-md-3">
                     <div class="footer-widget">
                         <h3>About Us</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s.</p>
 
                     </div>
                 </div>
