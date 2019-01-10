@@ -35,7 +35,7 @@
 <nav class="navbar navbar-expand-lg bg-white">
     <div class="container">
         <a class="navbar-brand" href="index.html">
-            <img src="img/logo.png" alt="Logo">
+            <img src="assets/images/sun.jpg" alt="Logo">
         </a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#main-nav"
                 aria-expanded="false" aria-label="Toggle navigation">

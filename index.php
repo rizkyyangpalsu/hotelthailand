@@ -14,8 +14,10 @@
             <div class="col-md-12">
                 <div class="section-title text-center">
                     <h2><span>Our Services</span></h2>
-                    <p>Sorem ipsum dolor sit amet, consectetur adipisicing Suscipit votas aperiam Sorem ipsum dolor
-                        consectur adipisicing elit.</p>
+                    <p>Decorated room, proper air conditioned Private balcony</p>
+                    <p> 24 hours room service
+
+24-hour Concierge service </p>
                 </div>
             </div>
         </div>
@@ -27,8 +29,7 @@
                         <i class="flaticon-slumber"></i>
                     </div>
                     <h3>Master Bedrooms</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sollicitudin lobortis turpis,
-                        sit amet aliquet metus.</p>
+                    <p>The special charm and the cosy mood of Cellai will make you feel as a true fiorentine in Florence.</p>
                 </div>
             </div>
 
@@ -38,8 +39,7 @@
                         <i class="flaticon-play-button"></i>
                     </div>
                     <h3>Playground</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sollicitudin lobortis turpis,
-                        sit amet aliquet metus.</p>
+                    <p>Modern playgrounds often have recreational equipment such as the seesaw, merry-go-round, swingset.</p>
                 </div>
             </div>
 
@@ -49,8 +49,7 @@
                         <i class="flaticon-house"></i>
                     </div>
                     <h3>Sea View Balcon</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sollicitudin lobortis turpis,
-                        sit amet aliquet metus.</p>
+                    <p>his luxury room has a signature wide terrace with amazing views of the Sorrento bay and sunsets.</p>
                 </div>
             </div>
         </div>
@@ -238,8 +237,8 @@
             <div class="col-md-12">
                 <div class="section-title text-center">
                     <h2><span>Gallery</span></h2>
-                    <p>Sorem ipsum dolor sit amet, consectetur adipisicing Suscipit votas aperiam Sorem ipsum dolor
-                        consectur adipisicing elit.</p>
+                    <p>Some Photos from our Hotel
+.</p>
                 </div>
             </div>
         </div>
@@ -330,8 +329,7 @@
             <div class="col-md-12">
                 <div class="section-title text-center">
                     <h2><span>Room and Rates</span></h2>
-                    <p>Sorem ipsum dolor sit amet, consectetur adipisicing Suscipit votas aperiam Sorem ipsum dolor
-                        consectur adipisicing elit.</p>
+                    <p>Relaxed and effortlessly luxurious, Rosedon’s bedrooms are individually decorated so no two are exactly alike. That's because they've been lovingly designed by artist Lee K. Petty, one of Rosedon's owners and Creative Director.</p>
                 </div>
             </div>
         </div>
@@ -348,7 +346,9 @@
                         <div class="media-body">
                             <div class="hotel-info">
                                 <h3><a href="deluxe-room.php">Deluxe Room</a></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing Suscipit tas aperiam.</p>
+                                <p>These Deluxe Rooms let you relax as you admire a beautiful view of the pool. Stay connected as you enjoy our free WiFi and watch movies with our 32-inch LCD TV and DVD player.
+
+</p>
                                 <div class="hotel-price">$150.00
                                     <small>- Per Night</small>
                                 </div>
@@ -367,7 +367,9 @@
                         <div class="media-body">
                             <div class="tour-info">
                                 <h3><a href="hotel-single.html">Luxury Room</a></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing Suscipit tas aperiam.</p>
+                                <p>These Deluxe Rooms let you relax as you admire a beautiful view of the pool. Stay connected as you enjoy our free WiFi and watch movies with our 32-inch LCD TV and DVD player.
+
+</p>
                                 <div class="hotel-price">$150.00
                                     <small>- Per Night</small>
                                 </div>
@@ -388,7 +390,9 @@
                         <div class="media-body">
                             <div class="tour-info">
                                 <h3><a href="hotel-single.html">Guest House</a></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing Suscipit tas aperiam.</p>
+                                <p>These Guest Rooms let you relax as you admire a beautiful view of the pool. Stay connected as you enjoy our free WiFi and watch movies with our 32-inch LCD TV and DVD player.
+
+</p>
                                 <div class="hotel-price">$150.00
                                     <small>- Per Night</small>
                                 </div>
@@ -406,7 +410,9 @@
                         <div class="media-body">
                             <div class="tour-info">
                                 <h3><a href="hotel-single.html">Single Room</a></h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing Suscipit tas aperiam.</p>
+                                <p>These Single Rooms let you relax as you admire a beautiful view of the pool. Stay connected as you enjoy our free WiFi and watch movies with our 32-inch LCD TV and DVD player.
+
+</p>
                                 <div class="hotel-price">$150.00
                                     <small>- Per Night</small>
                                 </div>
@@ -426,8 +432,8 @@
             <div class="col-md-12">
                 <div class="section-title text-center">
                     <h2><span>Tourist feedback</span></h2>
-                    <p>Sorem ipsum dolor sit amet, consectetur adipisicing Suscipit votas aperiam Sorem ipsum dolor
-                        consectur adipisicing elit.</p>
+                    <p>Customer feedback from hotel guests
+.</p>
                 </div>
             </div>
         </div>
@@ -443,18 +449,16 @@
                         <span class="flaticon-quote"></span>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <h3>African Forest</h3>
+                                <h3>Paul</h3>
                                 <h4>28 October, 2018</h4>
-                                <p>Duis non condimentum nunc. Nunc quis turpis eu est tincidunt rutrum. Cras a purus
-                                    quis sem tincidunt egestas vel id lacus. Nunc sed volutpat erat. Duis
-                                    sollicitudin.</p>
+                                <p>I love this place! Only stayed there once, so far, but will again, someday! Great location, great staff, great food, great rooms, great rates! Helsingin paras hotelli!.</p>
                             </div>
                             <div class="carousel-item">
-                                <h3>African Forest</h3>
-                                <h4>28 October, 2018</h4>
-                                <p>Duis non condimentum nunc. Nunc quis turpis eu est tincidunt rutrum. Cras a purus
-                                    quis sem tincidunt egestas vel id lacus. Nunc sed volutpat erat. Duis
-                                    sollicitudin.</p>
+                                <h3>Ray</h3>
+                                <h4>28 January, 2018</h4>
+                                <p>Great place to stay in town
+
+Nice staff, near bus access, very big room and silently sleep. You can find cheap food in train station nearby hotel. We found very cheap items shop near this hotel too, they sell souvenir and more things.</p>
                             </div>
                         </div>
 

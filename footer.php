@@ -5,8 +5,7 @@
                 <div class="col-md-3">
                     <div class="footer-widget">
                         <h3>About Us</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500sadsasdsadas.</p>
+                        <p>S M K N 1 S U R A B A Y A</p>
 
                     </div>
                 </div>
@@ -25,7 +24,7 @@
                     <div class="footer-widget">
                         <h3>Contact Info</h3>
                         <ul>
-                            <li><i class="fa fa-send" aria-hidden="true"></i> 3481 Rabana Place, 2090</li>
+                            <li><i class="fa fa-send" aria-hidden="true"></i> JL smea No 3 Surabaja</li>
                             <li><i class="fa fa-phone" aria-hidden="true"></i> +880 17980XXXXX</li>
                             <li><i class="fa fa-envelope-o" aria-hidden="true"></i> info@example.com</li>
                             <li><i class="fa fa-fax" aria-hidden="true"></i> Fax : 02 9635 0247</li>
