@@ -160,25 +160,19 @@ $getRoom = (isset($_GET['room']) && !empty($_GET['room'])) ? $_GET['room'] : nul
                               </div>
                               <div class="form-group">
                                                           <label>Adult</label>
-                                                          <select name="adult" class="form-control" required>
-                                      <option value selected ></option>
-                                                              <option value="Single">1</option>
-                                                              <option value="Double">2</option>
+                                                          <input type="number" name="adult" type ="text" class="form-control" required>
 
 
 
-                                                          </select>
+
                                             </div>
                                             <div class="form-group">
                                                                         <label>Children</label>
-                                                                        <select name="children" class="form-control" required>
-                                                    <option value selected ></option>
-                                                                            <option value="Single">1</option>
-                                                                            <option value="Double">2</option>
+                                                                      <input type="number" name="children" type ="text" class="form-control" required>
 
 
 
-                                                                        </select>
+
                                                           </div>
 							  <div class="form-group">
                                             <label>No.of Rooms *</label>
