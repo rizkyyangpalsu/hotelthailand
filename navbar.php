@@ -34,7 +34,7 @@
 
 <nav class="navbar navbar-expand-lg bg-white">
     <div class="container">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="./">
             <img src="assets/images/sun.jpg" alt="Logo">
         </a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#main-nav"
@@ -44,28 +44,16 @@
         <div class="collapse navbar-collapse" id="main-nav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="./">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about-us.html">About Us</a>
+                    <a class="nav-link" href="about.php">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="tours.html">Tours</a>
+                    <a class="nav-link" href="rooms.php">Rooms</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="destinations.html">Destinations</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="hotels.html">Hotels</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="gallery.html">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="blog.html">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact-us.html">Contact Us</a>
+                    <a class="nav-link" href="gallery.php">Gallery</a>
                 </li>
             </ul>
         </div>
