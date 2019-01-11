@@ -31,8 +31,9 @@
                                 <small>per night</small>
                             </h3>
                             <div class="sidebar-item sidebar-widget">
-                                <form action="#" method="post">
-                                    <input type="submit" value="Book Now" name="submit" class="btn btn-primary">
+                                <form action="admin/reservation.php" method="get">
+                                    <input type="hidden" value="Single Room" name="room">
+                                    <input type="submit" class="btn btn-primary">
                                 </form>
                             </div>
                         </div>

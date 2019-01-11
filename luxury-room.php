@@ -25,8 +25,9 @@
                             <div class="book-tour">
                                 <h3><small>From</small> $220 <small>per night</small></h3>
                                 <div class="sidebar-item sidebar-widget">
-                                    <form action="#" method="post">
-                                        <input type="submit" value="Book Now" name="submit" class="btn btn-primary">
+                                    <form action="admin/reservation.php" method="get">
+                                        <input type="hidden" value="Luxury Room" name="room">
+                                        <input type="submit" class="btn btn-primary">
                                     </form>
                                 </div>
                             </div>
