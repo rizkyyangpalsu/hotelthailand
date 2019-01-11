@@ -72,6 +72,8 @@
 
 
 <script src="scripts/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazy/1.7.5/jquery.lazy.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazy/1.7.5/plugins/jquery.lazy.av.min.js"></script>
 <script src="scripts/popper.min.js"></script>
 <script src="scripts/bootstrap.min.js"></script>
 <script src="scripts/jquery.easing.min.js"></script>
@@ -83,5 +85,10 @@
 <script src="scripts/form-validator.min.js"></script>
 <script src="scripts/contact-form-script.js"></script>
 <script src="scripts/script.js"></script>
+<script>
+    jQuery(function ($) {
+        $("video").lazy();
+    })
+</script>
 </body>
 </html>
