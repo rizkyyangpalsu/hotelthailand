@@ -158,6 +158,28 @@ $getRoom = (isset($_GET['room']) && !empty($_GET['room'])) ? $_GET['room'] : nul
 
                                             </select>
                               </div>
+                              <div class="form-group">
+                                                          <label>Adult</label>
+                                                          <select name="adult" class="form-control" required>
+                                      <option value selected ></option>
+                                                              <option value="Single">1</option>
+                                                              <option value="Double">2</option>
+
+
+
+                                                          </select>
+                                            </div>
+                                            <div class="form-group">
+                                                                        <label>Children</label>
+                                                                        <select name="children" class="form-control" required>
+                                                    <option value selected ></option>
+                                                                            <option value="Single">1</option>
+                                                                            <option value="Double">2</option>
+
+
+
+                                                                        </select>
+                                                          </div>
 							  <div class="form-group">
                                             <label>No.of Rooms *</label>
                                             <select name="nroom" class="form-control" required>
@@ -238,7 +260,7 @@ $getRoom = (isset($_GET['room']) && !empty($_GET['room'])) ? $_GET['room'] : nul
 									else
 									{
 										$new ="Not Conform";
-										$newUser="INSERT INTO `roombook`(`Title`, `FName`, `LName`, `Email`, `National`, `Country`, `Phone`, `TRoom`, `Bed`, `NRoom`, `Meal`, `cin`, `cout`,`stat`,`nodays`) VALUES ('$_POST[title]','$_POST[fname]','$_POST[lname]','$_POST[email]','$_POST[nation]','$_POST[country]','$_POST[phone]','$_POST[troom]','$_POST[bed]','$_POST[nroom]','$_POST[meal]','$_POST[cin]','$_POST[cout]','$new',datediff('$_POST[cout]','$_POST[cin]'))";
+										$newUser="INSERT INTO `roombook`(`Title`, `FName`, `LName`, `Email`, `National`, `Country`, `Phone`, `TRoom`, `Bed`, `NRoom`, `Meal`, `cin`, `cout`,`stat`,`nodays` , `adult` , `children`) VALUES ('$_POST[title]','$_POST[fname]','$_POST[lname]','$_POST[email]','$_POST[nation]','$_POST[country]','$_POST[phone]','$_POST[troom]','$_POST[bed]','$_POST[nroom]','$_POST[meal]','$_POST[cin]','$_POST[cout]','$new',datediff('$_POST[cout]','$_POST[cin]'),'$_POST[adult]','$_POST[children]')";
 										if (mysqli_query($con,$newUser))
 										{
 											echo "<script type='text/javascript'> alert('Your Booking application has been sent')</script>";
