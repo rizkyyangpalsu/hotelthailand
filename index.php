@@ -1,10 +1,30 @@
 <?php include_once 'navbar.php' ?>
 <!-- end nav -->
 
-<section>
-    <div class="slider">
-        <video src="assets/video/banner.mp4" class="video" style="width: 100%;" muted loop autoplay></video>
+<!--<section>-->
+<!--    <div class="slider">-->
+<!--        -->
+<!--        <video src="assets/video/banner.mp4" class="video" style="width: 100%;" muted loop autoplay></video>-->
+<!--    </div>-->
+<!--</section>-->
+<section class="inner-page-banner">
+    <video src="assets/video/banner.mp4" class="video" style="height: 450px;float: right;" muted loop autoplay></video>
+    <img src="assets/images/banner-empty.png" style="position: absolute;height: 450px;" height="450">
+    <div class="banner-caption">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="hero-text">
+                        <h6 class="animated fadeInLeft">Consetetur Adipiscing</h6>
+                        <h1 class="animated fadeInLeft">Best Hotel</h1>
+                        <p class="animated fadeInLeft">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Vestibulum tincidunt ullamcorper magna, in tincidunt ex auctor et.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
 </section>
 <!-- end banner -->
 

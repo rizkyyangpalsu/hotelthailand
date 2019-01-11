@@ -35,7 +35,7 @@
 <nav class="navbar navbar-expand-lg bg-white">
     <div class="container">
         <a class="navbar-brand" href="./">
-            <img src="assets/images/sun.jpg" alt="Logo">
+            <h1>SMEAS <span style="color:#2881a3;">HOTEL</span></h1>
         </a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#main-nav"
                 aria-expanded="false" aria-label="Toggle navigation">
