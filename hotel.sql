@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 22 Jan 2019 pada 05.03
--- Versi server: 10.1.37-MariaDB
--- Versi PHP: 7.3.0
+-- Generation Time: Jan 22, 2019 at 08:41 AM
+-- Server version: 10.1.37-MariaDB
+-- PHP Version: 7.3.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `contact`
+-- Table structure for table `contact`
 --
 
 CREATE TABLE `contact` (
@@ -40,7 +40,7 @@ CREATE TABLE `contact` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `login`
+-- Table structure for table `login`
 --
 
 CREATE TABLE `login` (
@@ -50,7 +50,7 @@ CREATE TABLE `login` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `login`
+-- Dumping data for table `login`
 --
 
 INSERT INTO `login` (`id`, `usname`, `pass`) VALUES
@@ -62,7 +62,7 @@ INSERT INTO `login` (`id`, `usname`, `pass`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `newsletterlog`
+-- Table structure for table `newsletterlog`
 --
 
 CREATE TABLE `newsletterlog` (
@@ -73,7 +73,7 @@ CREATE TABLE `newsletterlog` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `newsletterlog`
+-- Dumping data for table `newsletterlog`
 --
 
 INSERT INTO `newsletterlog` (`id`, `title`, `subject`, `news`) VALUES
@@ -83,11 +83,11 @@ INSERT INTO `newsletterlog` (`id`, `title`, `subject`, `news`) VALUES
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `payment`
+-- Table structure for table `payment`
 --
 
 CREATE TABLE `payment` (
-  `id` int(11) DEFAULT NULL,
+  `id` int(11) NOT NULL,
   `title` varchar(5) DEFAULT NULL,
   `fname` varchar(30) DEFAULT NULL,
   `lname` varchar(30) DEFAULT NULL,
@@ -105,20 +105,18 @@ CREATE TABLE `payment` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `payment`
+-- Dumping data for table `payment`
 --
 
 INSERT INTO `payment` (`id`, `title`, `fname`, `lname`, `troom`, `tbed`, `nroom`, `cin`, `cout`, `ttot`, `fintot`, `mepr`, `meal`, `btot`, `noofdays`) VALUES
-(4, 'Dr.', 'Asus', 'Asus', 'Deluxe Room', 'Single', 1, '2019-01-11', '2019-01-14', 660.00, 666.60, 0.00, 'Room only', 6.60, 3),
 (2, 'Dr.', 'g', 'g', 'Superior Room', 'Single', 1, '2019-01-18', '2019-01-19', 320.00, 323.20, 0.00, 'Room only', 3.20, 1),
 (3, 'Dr.', 'd', 'd', 'Superior Room', 'Single', 1, '2019-01-11', '2019-01-12', 320.00, 323.20, 0.00, 'Room only', 3.20, 1),
-(0, 'Dr.', 'a', 'sdd', 'Deluxe Room', 'Single', 1, '2019-01-20', '2019-01-22', 440.00, 444.40, 0.00, 'Room only', 4.40, 2),
-(0, '', '', '', '', '', 0, '0000-00-00', '0000-00-00', 0.00, 0.00, 0.00, '', 0.00, 0);
+(4, 'Dr.', 'Asus', 'Asus', 'Deluxe Room', 'Single', 1, '2019-01-11', '2019-01-14', 660.00, 666.60, 0.00, 'Room only', 6.60, 3);
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `room`
+-- Table structure for table `room`
 --
 
 CREATE TABLE `room` (
@@ -132,7 +130,7 @@ CREATE TABLE `room` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `room`
+-- Dumping data for table `room`
 --
 
 INSERT INTO `room` (`id`, `type`, `bedding`, `place`, `cusid`, `adult`, `children`) VALUES
@@ -155,7 +153,7 @@ INSERT INTO `room` (`id`, `type`, `bedding`, `place`, `cusid`, `adult`, `childre
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `roombook`
+-- Table structure for table `roombook`
 --
 
 CREATE TABLE `roombook` (
@@ -178,20 +176,22 @@ CREATE TABLE `roombook` (
   `adult` int(11) DEFAULT NULL,
   `children` int(11) DEFAULT NULL,
   `btrans` varchar(40) DEFAULT NULL,
-  `bank` longblob
+  `bank` varchar(255) DEFAULT NULL,
+  `image` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `roombook`
+-- Dumping data for table `roombook`
 --
 
-INSERT INTO `roombook` (`id`, `Title`, `FName`, `LName`, `Email`, `National`, `Country`, `Phone`, `TRoom`, `Bed`, `NRoom`, `Meal`, `cin`, `cout`, `stat`, `nodays`, `adult`, `children`, `btrans`, `bank`) VALUES
-(0, 'Dr.', 'ss', 'd', 'aseehb.a@kopibajawapunya15711640.ml', 'Indonesia', 'Bangladesh', '08563045663', 'Deluxe Room', 'Single', '1', 'Breakfast', '2019-01-21', '2019-01-23', 'Not Conform', 2, 1, 0, 'banktf', 0x32303135313231355f3132353333395f4844522e6a7067);
+INSERT INTO `roombook` (`id`, `Title`, `FName`, `LName`, `Email`, `National`, `Country`, `Phone`, `TRoom`, `Bed`, `NRoom`, `Meal`, `cin`, `cout`, `stat`, `nodays`, `adult`, `children`, `btrans`, `bank`, `image`) VALUES
+(1, 'Dr.', 'asdlkasdkl', 'klasjaskj', 'hasdkjs@adad.con', 'Indonesia', 'Afghanistan', '777676', 'Single Room', 'Single', '1', 'Breakfast', '2019-01-24', '2019-01-25', 'Not Conform', 1, 1, 1, 'banktf', '', ''),
+(2, 'Dr.', 'asdlkasdkl', 'klasjaskj', 'sadasdasjdkj@adad.con', 'Indonesia', 'Afghanistan', '777676', 'Single Room', 'Single', '1', 'Breakfast', '2019-01-24', '2019-01-25', 'Not Conform', 1, 1, 1, 'banktf', 'AN / BANK INTERNATIONAL', 'g5.jpg');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `users`
+-- Table structure for table `users`
 --
 
 CREATE TABLE `users` (
@@ -201,63 +201,98 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `users`
+-- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `usname`, `pass`) VALUES
 (1, 'Admin', '1234'),
 (2, 'Prasath', '12345'),
-(3, 'member', '1234'),
-(0, 'a', '1234'),
-(0, 'fghfh', 'fhhfhf'),
-(0, 'aa', '111'),
-(0, 'ddd', 'dd'),
-(0, 'halid', '1234'),
-(0, 'joko', '123'),
-(0, 'rizki', '123');
+(3, 'member', '1234');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indeks untuk tabel `contact`
+-- Indexes for table `contact`
 --
 ALTER TABLE `contact`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `login`
+-- Indexes for table `login`
 --
 ALTER TABLE `login`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `newsletterlog`
+-- Indexes for table `newsletterlog`
 --
 ALTER TABLE `newsletterlog`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- Indexes for table `payment`
+--
+ALTER TABLE `payment`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `room`
+--
+ALTER TABLE `room`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `roombook`
+--
+ALTER TABLE `roombook`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `contact`
+-- AUTO_INCREMENT for table `contact`
 --
 ALTER TABLE `contact`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT untuk tabel `login`
+-- AUTO_INCREMENT for table `login`
 --
 ALTER TABLE `login`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT untuk tabel `newsletterlog`
+-- AUTO_INCREMENT for table `newsletterlog`
 --
 ALTER TABLE `newsletterlog`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `payment`
+--
+ALTER TABLE `payment`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `room`
+--
+ALTER TABLE `room`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+
+--
+-- AUTO_INCREMENT for table `roombook`
+--
+ALTER TABLE `roombook`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
