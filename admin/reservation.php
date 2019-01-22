@@ -1,5 +1,11 @@
 <?php
+session_start();
 include('db.php');
+if(!isset($_SESSION["users"]))
+{
+     header("location:usersbook.php");
+
+}
 
 $getRoom = (isset($_GET['room']) && !empty($_GET['room'])) ? $_GET['room'] : null;
 ?>
@@ -15,7 +21,7 @@ $getRoom = (isset($_GET['room']) && !empty($_GET['room'])) ? $_GET['room'] : nul
     display: none;
   }
   </style>
-  <title>PHPflow.com :  Multi step Form Using PHP,Bootstrap and jQuery</title>
+  <title>RESERVATION </title>
 </head>
 <body>
   <div class="container">
@@ -23,7 +29,7 @@ $getRoom = (isset($_GET['room']) && !empty($_GET['room'])) ? $_GET['room'] : nul
   <div class="progress">
     <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
   </div>
-  
+
   <form id="regiration_form" novalidate action="action.php"  method="post">
   <fieldset>
    <u><div class="panel-heading">
@@ -177,10 +183,10 @@ $getRoom = (isset($_GET['room']) && !empty($_GET['room'])) ? $_GET['room'] : nul
 
                                </div>
 
-            
 
 
-  
+
+
     <input type="button" name="data[password]" class="next btn btn-info" value="Next" />
 
 
@@ -194,19 +200,19 @@ $getRoom = (isset($_GET['room']) && !empty($_GET['room'])) ? $_GET['room'] : nul
                                             <label class="radio-inline">
                                                 <input type="radio" name="btrans"  value="banktfs">Non Bank tranfer
                                             </label>
-                                            
+
 
                                 </div>
     <div class="form-group">
-                                        
+
                                             <select name="bank" class="form-control" required>
                                                 <option value selected ></option>
                                                 <option value="Single">01993858581 AN / BANK INTERNATIONAL </option>
-                                               
+
 
                                            </select>
                               </div>
-    
+
     <input type="button" name="next" class="next btn btn-info" value="Next" />
 
   </fieldset>
@@ -250,7 +256,7 @@ $(document).ready(function(){
     percent = percent.toFixed();
     $(".progress-bar")
       .css("width",percent+"%")
-      .html(percent+"%");   
+      .html(percent+"%");
   }
 });
 </script>

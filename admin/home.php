@@ -1,10 +1,10 @@
-﻿<?php  
-session_start();  
+﻿<?php
+session_start();
 if(!isset($_SESSION["user"]))
 {
  header("location:index.php");
 }
-?> 
+?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -79,10 +79,10 @@ if(!isset($_SESSION["user"]))
                     <li>
                         <a href="logout.php"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                     </li>
-                   
 
 
-                    
+
+
 					</ul>
 
             </div>
@@ -114,27 +114,27 @@ if(!isset($_SESSION["user"]))
 								if($new=="Not Conform")
 								{
 									$c = $c + 1;
-									
-								
-								}
-						
-						}
-						
-									
-									
 
-						
+
+								}
+
+						}
+
+
+
+
+
 				?>
 
 					<div class="row">
                 <div class="col-md-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            
+
                         </div>
                         <div class="panel-body">
                             <div class="panel-group" id="accordion">
-							
+
 							<div class="panel panel-primary">
                                     <div class="panel-heading">
                                         <h4 class="panel-title">
@@ -148,8 +148,8 @@ if(!isset($_SESSION["user"]))
                                     <div id="collapseTwo" class="panel-collapse in" style="height: auto;">
                                         <div class="panel-body">
                                            <div class="panel panel-default">
-                        
-                        <div class="panel-body">
+
+                        <div class="panel-body" style="overflow-x: scroll;">
                             <div class="table-responsive">
                                 <table class="table">
                                     <thead>
@@ -165,17 +165,17 @@ if(!isset($_SESSION["user"]))
 											<th>Check Out</th>
 											<th>Status</th>
 											<th>More</th>
-											
+
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        
+
 									<?php
 									$tsql = "select * from roombook";
 									$tre = mysqli_query($con,$tsql);
 									while($trow=mysqli_fetch_array($tre) )
-									{	
-										$co =$trow['stat']; 
+									{
+										$co =$trow['stat'];
 										if($co=="Not Conform")
 										{
 											echo"<tr>
@@ -189,43 +189,43 @@ if(!isset($_SESSION["user"]))
 												<th>".$trow['cin']."</th>
 												<th>".$trow['cout']."</th>
 												<th>".$trow['stat']."</th>
-												
+
 												<th><a href='roombook.php?rid=".$trow['id']." ' class='btn btn-primary'>Action</a></th>
 												</tr>";
-										}	
-									
+										}
+
 									}
 									?>
-                                        
+
                                     </tbody>
                                 </table>
-								
+
                             </div>
                         </div>
                     </div>
-                      <!-- End  Basic Table  --> 
+                      <!-- End  Basic Table  -->
                                         </div>
                                     </div>
                                 </div>
 								<?php
-								
+
 								$rsql = "SELECT * FROM `roombook`";
 								$rre = mysqli_query($con,$rsql);
 								$r =0;
 								while($row=mysqli_fetch_array($rre) )
-								{		
+								{
 										$br = $row['stat'];
 										if($br=="Conform")
 										{
 											$r = $r + 1;
-											
-											
-											
+
+
+
 										}
-										
-								
+
+
 								}
-						
+
 								?>
                                 <div class="panel panel-info">
                                     <div class="panel-heading">
@@ -234,7 +234,7 @@ if(!isset($_SESSION["user"]))
 											<button class="btn btn-primary" type="button">
 												 Booked Rooms  <span class="badge"><?php echo $r ; ?></span>
 											</button>
-											
+
 											</a>
                                         </h4>
                                     </div>
@@ -243,14 +243,14 @@ if(!isset($_SESSION["user"]))
 										<?php
 										$msql = "SELECT * FROM `roombook`";
 										$mre = mysqli_query($con,$msql);
-										
+
 										while($mrow=mysqli_fetch_array($mre) )
-										{		
+										{
 											$br = $mrow['stat'];
 											if($br=="Conform")
 											{
 												$fid = $mrow['id'];
-												 
+
 											echo"<div class='col-md-3 col-sm-12 col-xs-12'>
 													<div class='panel panel-primary text-center no-boder bg-color-blue'>
 														<div class='panel-body'>
@@ -263,35 +263,35 @@ if(!isset($_SESSION["user"]))
 													</button></a>
 															".$mrow['TRoom']."
 														</div>
-													</div>	
+													</div>
 											</div>";
-															
-												
-					
-				
-												
+
+
+
+
+
 											}
-											
-									
+
+
 										}
 										?>
-                                           
+
 										</div>
-										
+
                                     </div>
-									
+
                                 </div>
                                 <?php
-								
+
 								$fsql = "SELECT * FROM `contact`";
 								$fre = mysqli_query($con,$fsql);
 								$f =0;
 								while($row=mysqli_fetch_array($fre) )
 								{
 										$f = $f + 1;
-								
+
 								}
-						
+
 								?>
                                 <div class="panel panel-danger">
                                     <div class="panel-heading">
@@ -315,18 +315,18 @@ if(!isset($_SESSION["user"]))
                                             <th>Email</th>
 											<th>Follow Start</th>
                                             <th>Permission status</th>
-                                            
-											
+
+
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        
+
 									<?php
 									$csql = "select * from contact";
 									$cre = mysqli_query($con,$csql);
 									while($crow=mysqli_fetch_array($cre) )
-									{	
-										
+									{
+
 											echo"<tr>
 												<th>".$crow['id']."</th>
 												<th>".$crow['fullname']."</th>
@@ -334,11 +334,11 @@ if(!isset($_SESSION["user"]))
 												<th>".$crow['cdate']." </th>
 												<th>".$crow['approval']."</th>
 												</tr>";
-										
-									
+
+
 									}
 									?>
-                                        
+
                                     </tbody>
                                 </table>
 								<a href="messages.php" class="btn btn-primary">More Action</a>
@@ -353,12 +353,12 @@ if(!isset($_SESSION["user"]))
                     </div>
                 </div>
             </div>
-            
-			
+
+
 				<!-- DEOMO-->
 				<div class='panel-body'>
                             <button class='btn btn-primary btn' data-toggle='modal' data-target='#myModal'>
-                              Update 
+                              Update
                             </button>
                             <div class='modal fade' id='myModal' tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true'>
                                 <div class='modal-dialog'>
@@ -380,26 +380,26 @@ if(!isset($_SESSION["user"]))
                                             <input name='pasd' value='<?php echo $ps; ?>' class='form-control' placeholder='Enter Password'>
 											</div>
                                         </div>
-										
+
                                         <div class='modal-footer'>
                                             <button type='button' class='btn btn-default' data-dismiss='modal'>Close</button>
-											
+
                                            <input type='submit' name='up' value='Update' class='btn btn-primary'>
 										  </form>
-										   
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-				
+
 				<!--DEMO END-->
-				
-										
-                    
+
+
+
 
                 <!-- /. ROW  -->
-				
+
             </div>
             <!-- /. PAGE INNER  -->
         </div>
