@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 22, 2019 at 08:41 AM
+-- Generation Time: Jan 23, 2019 at 10:34 AM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.3.0
 
@@ -148,7 +148,8 @@ INSERT INTO `room` (`id`, `type`, `bedding`, `place`, `cusid`, `adult`, `childre
 (12, 'Guest House', 'Quad', 'Free', NULL, NULL, NULL),
 (13, 'Single Room', 'Single', 'Free', NULL, NULL, NULL),
 (14, 'Single Room', 'Double', 'Free', NULL, NULL, NULL),
-(15, 'Single Room', 'Triple', 'Free', NULL, NULL, NULL);
+(15, 'Single Room', 'Triple', 'Free', NULL, NULL, NULL),
+(16, 'Superior Room', 'Single', 'Free', NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -185,8 +186,9 @@ CREATE TABLE `roombook` (
 --
 
 INSERT INTO `roombook` (`id`, `Title`, `FName`, `LName`, `Email`, `National`, `Country`, `Phone`, `TRoom`, `Bed`, `NRoom`, `Meal`, `cin`, `cout`, `stat`, `nodays`, `adult`, `children`, `btrans`, `bank`, `image`) VALUES
-(1, 'Dr.', 'asdlkasdkl', 'klasjaskj', 'hasdkjs@adad.con', 'Indonesia', 'Afghanistan', '777676', 'Single Room', 'Single', '1', 'Breakfast', '2019-01-24', '2019-01-25', 'Not Conform', 1, 1, 1, 'banktf', '', ''),
-(2, 'Dr.', 'asdlkasdkl', 'klasjaskj', 'sadasdasjdkj@adad.con', 'Indonesia', 'Afghanistan', '777676', 'Single Room', 'Single', '1', 'Breakfast', '2019-01-24', '2019-01-25', 'Not Conform', 1, 1, 1, 'banktf', 'AN / BANK INTERNATIONAL', 'g5.jpg');
+(17, '', 'rahel', 'Asus', 'rahdsdsdsdel@gmail.com', 'Indonesia', '', '0896747447', '', '', '', '', '0000-00-00', '0000-00-00', 'Not Conform', NULL, 0, 0, 'banktf', 'AN / BANK INTERNATIONAL', ''),
+(18, 'Dr.', 'rahel', 'Asus', 'rahedsdssal@gmail.com', 'Indonesia', 'Indonesia', '0896747447444', 'Luxury Room', 'Single', '1', 'Room only', '2019-01-23', '2019-01-24', 'Not Conform', 1, 1, 0, 'banktf', 'AN / BANK INTERNATIONAL', 'sas.png'),
+(19, 'Dr.', 'agus', 'agus', 'sd@gmail.com', 'Indonesia', 'Indonesia', '089674744722', 'Deluxe Room', 'None', '1', 'Breakfast', '2019-01-24', '2019-01-26', 'Not Conform', 2, 1, 0, 'banktf', 'AN / BANK INTERNATIONAL', 'medishub.png');
 
 -- --------------------------------------------------------
 
@@ -197,17 +199,22 @@ INSERT INTO `roombook` (`id`, `Title`, `FName`, `LName`, `Email`, `National`, `C
 CREATE TABLE `users` (
   `id` int(10) UNSIGNED NOT NULL,
   `usname` varchar(30) DEFAULT NULL,
-  `pass` varchar(30) DEFAULT NULL
+  `pass` varchar(30) DEFAULT NULL,
+  `fname` varchar(30) DEFAULT NULL,
+  `lname` varchar(30) DEFAULT NULL,
+  `email` varchar(30) DEFAULT NULL,
+  `telp` varchar(30) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `usname`, `pass`) VALUES
-(1, 'Admin', '1234'),
-(2, 'Prasath', '12345'),
-(3, 'member', '1234');
+INSERT INTO `users` (`id`, `usname`, `pass`, `fname`, `lname`, `email`, `telp`) VALUES
+(1, 'member', '1234', NULL, NULL, NULL, NULL),
+(2, 'member2', '1234', 'joko', 'budi', 'ad@gmail.com', '089677574474'),
+(3, 'rahel', '1234', 'rahel', 'Asus', 'rahel@gmail.com', '0896747447'),
+(4, 'agus', '123', 'agus', 'agus', 'sd@gmail.com', '089674744722');
 
 --
 -- Indexes for dumped tables
@@ -287,13 +294,19 @@ ALTER TABLE `payment`
 -- AUTO_INCREMENT for table `room`
 --
 ALTER TABLE `room`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `roombook`
 --
 ALTER TABLE `roombook`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
