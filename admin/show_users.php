@@ -2,7 +2,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Details of Book key</title>
-		
+
 		<style>
 		/* reset */
 
@@ -167,7 +167,7 @@ tr:hover .cut { opacity: 1; }
 
 
 
-	$sql ="select * from roombook where id = '$pid' ";
+	$sql ="select * from roombook where email = '$pid' ";
 	$re = mysqli_query($con,$sql);
 	while($row=mysqli_fetch_array($re))
 	{
@@ -193,10 +193,13 @@ tr:hover .cut { opacity: 1; }
 	?>
 		<header>
 			<h1>Information of Guest</h1>
-			<address >
-				<p>SUN RISE HOTEL,</p>
-				<p>New Kalmunani Road,<br>Battialoa,<br>Sri Lanka.</p>
-				<p>(+94) 65 222 44 55</p>
+			<address style="">
+				<p>SMEASHOTEL,</p>
+				<p>Jl Smea 3,<br>Surabaya,<br>Indonesia.</p>
+				<p>(+62) 0846765754</p>
+			</address>
+			<address style="position: relative; float: right; background: #b22; border-radius: 0.25em; color: #FFF; margin: 0 0 1em; padding: 0.5em 0; width: 20%;">
+				<p><center>Coustomer Receipt</center></p>
 			</address>
 			<span><img alt="" src="assets/img/sun.png"></span>
 		</header>
@@ -268,7 +271,7 @@ tr:hover .cut { opacity: 1; }
 		<aside>
 			<h1><span >Contact us</span></h1>
 			<div >
-				<p align="center">Email :- info@sunrise.com || Web :- www.sunrise.com || Phone :- +94 65 222 44 55 </p>
+				<p align="center">Email :- info@SMEASHOTEL.com || Web :- www.smnk1.com || Phone :- +62 6098674576 </p>
 			</div>
 		</aside>
 	</body>

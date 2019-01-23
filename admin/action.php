@@ -38,10 +38,10 @@ if ($data[0] > 1) {
 
     move_uploaded_file($image['tmp_name'], "../assets/uploads/" . $image['name']);
 
-    $newUser = "INSERT INTO `roombook`(`Title`, `FName`, `LName`, `Email`, `National`, `Country`, `Phone`, `TRoom`, `Bed`, `NRoom`, `Meal`, `cin`, `cout`,`stat`,`nodays` , `adult` , `children`, `btrans`, `bank`, `image`)
-										VALUES ('$_POST[title]','$_POST[fname]','$_POST[lname]','$_POST[email]','$_POST[nation]','$_POST[country]','$_POST[phone]','$_POST[troom]','$_POST[bed]','$_POST[nroom]','$_POST[meal]','$_POST[cin]','$_POST[cout]','$new',datediff('$_POST[cout]','$_POST[cin]'),'$_POST[adult]','$_POST[children]','$_POST[btrans]','$_POST[bank]', '$image[name]')";
+    $newUser = "insert into `roombook`(`Title`, `FName`, `LName`, `Email`, `National`, `Country`, `Phone`, `TRoom`, `Bed`, `NRoom`, `Meal`, `cin`, `cout`,`stat`,`nodays` , `adult` , `children`, `btrans`, `bank`, `image`)
+										values ('$_POST[title]','$_POST[fname]','$_POST[lname]','$_POST[email]','$_POST[nation]','$_POST[country]','$_POST[phone]','$_POST[troom]','$_POST[bed]','$_POST[nroom]','$_POST[meal]','$_POST[cin]','$_POST[cout]','$new',datediff('$_POST[cout]','$_POST[cin]'),'$_POST[adult]','$_POST[children]','$_POST[btrans]','$_POST[bank]', '$image[name]')";
     if (mysqli_query($con, $newUser)) {
-        echo "<script type='text/javascript'> alert('Your Booking application has been sent'); window.location.href = '/'</script>";
+        echo "<script type='text/javascript'> alert('Your Booking application has been sent'); window.location.href = 'show_users.php?sid=$_POST[email]' ;</script>";
 
     } else {
         echo "<script type='text/javascript'> alert('Error adding user in database'); history.back()</script>";

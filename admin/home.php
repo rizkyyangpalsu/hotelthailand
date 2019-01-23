@@ -77,6 +77,9 @@ if(!isset($_SESSION["user"]))
                         <a  href="profit.php"><i class="fa fa-qrcode"></i> Profit</a>
                     </li>
                     <li>
+                        <a  href="room_manage.php"><i class="fa fa-home"></i> Room Manage</a>
+                    </li>
+                    <li>
                         <a href="logout.php"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                     </li>
 

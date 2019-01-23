@@ -55,6 +55,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="gallery.php">Gallery</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="admin/users.php">Member / Register Page</a>
+                </li>
             </ul>
         </div>
     </div>

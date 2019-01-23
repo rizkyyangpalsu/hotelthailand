@@ -77,7 +77,7 @@
       $myusername1 = mysqli_real_escape_string($con,$_POST['user1']);
       $mypassword = mysqli_real_escape_string($con,$_POST['pass1']);
 
-      $sql = "SELECT id FROM users WHERE usname = '$myusername1' and pass = '$mypassword'";
+      $sql = "SELECT * FROM users WHERE usname = '$myusername1' and pass = '$mypassword'";
       $result = mysqli_query($con,$sql);
       $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
       $active = $row['active'];
@@ -89,6 +89,10 @@
       if($count == 1) {
 
          $_SESSION['users'] = $myusername1;
+         $_SESSION['email'] = $row['email'];
+         $_SESSION['fname'] = $row['fname'];
+         $_SESSION['lname'] = $row['lname'];
+          $_SESSION['telp'] = $row['telp'];
 
          header("location: usersbook.php");
       }else {
