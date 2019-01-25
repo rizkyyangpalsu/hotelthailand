@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 23, 2019 at 10:34 AM
+-- Generation Time: Jan 25, 2019 at 05:23 AM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.3.0
 
@@ -57,7 +57,7 @@ INSERT INTO `login` (`id`, `usname`, `pass`) VALUES
 (1, 'Admin', '1234'),
 (2, 'Prasath', '12345'),
 (4, 'users', '1234'),
-(5, 'Prasath', '12345');
+(5, 'agg', '12345d');
 
 -- --------------------------------------------------------
 
@@ -149,7 +149,8 @@ INSERT INTO `room` (`id`, `type`, `bedding`, `place`, `cusid`, `adult`, `childre
 (13, 'Single Room', 'Single', 'Free', NULL, NULL, NULL),
 (14, 'Single Room', 'Double', 'Free', NULL, NULL, NULL),
 (15, 'Single Room', 'Triple', 'Free', NULL, NULL, NULL),
-(16, 'Superior Room', 'Single', 'Free', NULL, NULL, NULL);
+(16, 'Superior Room', 'Single', 'Free', NULL, NULL, NULL),
+(17, 'Superior Room', 'Single', 'Free', NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -211,7 +212,6 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `usname`, `pass`, `fname`, `lname`, `email`, `telp`) VALUES
-(1, 'member', '1234', NULL, NULL, NULL, NULL),
 (2, 'member2', '1234', 'joko', 'budi', 'ad@gmail.com', '089677574474'),
 (3, 'rahel', '1234', 'rahel', 'Asus', 'rahel@gmail.com', '0896747447'),
 (4, 'agus', '123', 'agus', 'agus', 'sd@gmail.com', '089674744722');
@@ -294,7 +294,7 @@ ALTER TABLE `payment`
 -- AUTO_INCREMENT for table `room`
 --
 ALTER TABLE `room`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `roombook`
