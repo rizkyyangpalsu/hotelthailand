@@ -21,7 +21,7 @@
       <style media="screen">
         .login{
           font-family: sans-serif;
-          color: cornsilk;
+          color: #353328;
           padding: 0px 10px 40px;
           font-size: -webkit-xxx-large;
         }
@@ -51,8 +51,8 @@
 
             <p><span class="fontawesome-user"></span><input type="text"  name="user1" value="Username" onBlur="if(this.value == '') this.value = 'Username'" onFocus="if(this.value == 'Username') this.value = ''" required></p> <!-- JS because of IE support; better: placeholder="Username" -->
             <p><span class="fontawesome-lock"></span><input type="password" name="pass1"  value="Password" onBlur="if(this.value == '') this.value = 'Password'" onFocus="if(this.value == 'Password') this.value = ''" required></p> <!-- JS because of IE support; better: placeholder="Password" -->
-            <p><span class="fontawesome-user"></span><input type="text"  name="fname" value="First Name" onBlur="if(this.value == '') this.value = 'fname'" onFocus="if(this.value == 'First Name') this.value = ''" required></p> <!-- JS because of IE support; better: placeholder="Username" -->
-            <p><span class="fontawesome-user"></span><input type="text" name="lname"  value="Last Name" onBlur="if(this.value == '') this.value = 'lname'" onFocus="if(this.value == 'Last Name') this.value = ''" required></p> <!-- JS because of IE support; better: placeholder="Password" -->
+            <p><span class="fontawesome-user"></span><input type="text"  name="fname" value="First Name" onBlur="if(this.value == '') this.value = 'First Name'" onFocus="if(this.value == 'First Name') this.value = ''" required></p> <!-- JS because of IE support; better: placeholder="Username" -->
+            <p><span class="fontawesome-user"></span><input type="text" name="lname"  value="Last Name" onBlur="if(this.value == '') this.value = 'last Name'" onFocus="if(this.value == 'Last Name') this.value = ''" required></p> <!-- JS because of IE support; better: placeholder="Password" -->
             <p><span class="fontawesome-adjust"></span><input type="text"  name="email" value="Email" onBlur="if(this.value == '') this.value = 'Email'" onFocus="if(this.value == 'Email') this.value = ''" required></p> <!-- JS because of IE support; better: placeholder="Username" -->
             <p><span class="fontawesome-adjust"></span><input type="text" name="telp"  value="Telp" onBlur="if(this.value == '') this.value = 'telp'" onFocus="if(this.value == 'Telp') this.value = ''" required></p> <!-- JS because of IE support; better: placeholder="Password" -->
 

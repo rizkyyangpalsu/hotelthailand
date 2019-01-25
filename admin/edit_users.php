@@ -1,8 +1,8 @@
 <?php
 session_start();
-if(!isset($_SESSION["user"]))
+if(!isset($_SESSION["users"]))
 {
- header("location:index.php");
+ header("location:usersbook.php");
 }
 
 ob_start();
@@ -43,7 +43,7 @@ ob_start();
                         <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li><a href="usersetting.php"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        <li><a href="edit_users.php"><i class="fa fa-user fa-fw"></i> User Profile</a>
                         </li>
                         <li><a href="settings.php"><i class="fa fa-gear fa-fw"></i> Settings</a>
                         </li>
@@ -79,7 +79,7 @@ ob_start();
 			 <div class="row">
                     <div class="col-md-12">
                         <h1 class="page-header">
-                           ADMINISTRATOR<small> accounts </small>
+                           Member<small> accounts </small>
                         </h1>
                     </div>
                 </div>
@@ -87,7 +87,7 @@ ob_start();
 
             <?php
 						include ('db.php');
-						$sql = "SELECT * FROM `login`";
+						$sql = "SELECT * FROM `users`";
 						$re = mysqli_query($con,$sql)
 				?>
 
@@ -100,12 +100,16 @@ ob_start();
                                 <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                     <thead>
                                         <tr>
-                                            <th>User ID</th>
-											<th>User name</th>
-                                            <th>Password</th>
+                                          <th>Id</th>
+                                            <th>First Name</th>
+											<th>Last Name</th>
+                                            <th>Email</th>
+                                            <th>Telp</th>
+
 
 											<th>Update</th>
-											<th>Remove</th>
+                      					<th>Remove</th>
+
 
                                         </tr>
                                     </thead>
@@ -114,16 +118,19 @@ ob_start();
 									<?php
 										while($row = mysqli_fetch_array($re))
 										{
-
-											$id = $row['id'];
-											$us = $row['usname'];
-											$ps = $row['pass'];
+                     $id = $row['id'];
+											$fname = $row['fname'];
+											$lname = $row['lname'];
+											$email = $row['email'];
+                      	$telp = $row['telp'];
 											if($id % 2 ==0 )
 											{
 												echo"<tr class='gradeC'>
-													<td>".$id."</td>
-													<td>".$us."</td>
-													<td>".$ps."</td>
+                        	<td>".$id."</td>
+													<td>".$fname."</td>
+													<td>".$lname."</td>
+													<td>".$email."</td>
+                          <td>".$telp."</td>
 
 													<td><button class='btn btn-primary btn' data-toggle='modal' data-target='#myModal'>
 															 Update
@@ -134,9 +141,11 @@ ob_start();
 											else
 											{
 												echo"<tr class='gradeU'>
-													<td>".$id."</td>
-													<td>".$us."</td>
-													<td>".$ps."</td>
+                        	<td>".$id."</td>
+													<td>".$fname."</td>
+													<td>".$lname."</td>
+													<td>".$email."</td>
+                          <td>".$telp."</td>
 
 													<td><button class='btn btn-primary btn' data-toggle='modal' data-target='#myModal'>
                               Update
@@ -157,58 +166,7 @@ ob_start();
                         </div>
                     </div>
                     <!--End Advanced Tables -->
-					<div class="panel-body">
-                            <button class="btn btn-primary btn" data-toggle="modal" data-target="#myModal1">
-															Add New Admin
-													</button>
-                            <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                            <h4 class="modal-title" id="myModalLabel">Add the User name and Password</h4>
-                                        </div>
-										<form method="post">
-                                        <div class="modal-body">
-                                            <div class="form-group">
-                                            <label>Add new User name</label>
-                                            <input name="newus"  class="form-control" placeholder="Enter User name">
-											</div>
-										</div>
-										<div class="modal-body">
-                                            <div class="form-group">
-                                            <label>New Password</label>
-                                            <input name="newps"  class="form-control" placeholder="Enter Password">
-											</div>
-                                        </div>
 
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-
-                                           <input type="submit" name="in" value="Add" class="btn btn-primary">
-										  </form>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-						<?php
-						if(isset($_POST['in']))
-						{
-							$newus = $_POST['newus'];
-							$newps = $_POST['newps'];
-
-							$newsql ="Insert into login (usname,pass) values ('$newus','$newps')";
-							if(mysqli_query($con,$newsql))
-							{
-							echo' <script language="javascript" type="text/javascript"> alert("User name and password Added") </script>';
-
-
-							}
-						header("Location: usersetting.php");
-						}
-						?>
 
 					<div class="panel-body">
 
@@ -220,18 +178,32 @@ ob_start();
                                             <h4 class="modal-title" id="myModalLabel">Change the User name and Password</h4>
                                         </div>
 										<form method="post">
+
+  <div class="modal-body">
+      <div class="form-group">
+      <label>First Name</label>
+      <input name="fname" value="<?php echo $fname; ?>" class="form-control" placeholder="Enter User name">
+</div>
+</div>
                                         <div class="modal-body">
                                             <div class="form-group">
-                                            <label>Change User name</label>
-                                            <input name="usname" value="<?php echo $us; ?>" class="form-control" placeholder="Enter User name">
+                                            <label>Last Name</label>
+                                            <input name="lname" value="<?php echo $lname; ?>" class="form-control" placeholder="Enter User name">
 											</div>
 										</div>
 										<div class="modal-body">
                                             <div class="form-group">
-                                            <label>Change Password</label>
-                                            <input name="pasd" value="<?php echo $ps; ?>" class="form-control" placeholder="Enter Password">
+                                            <label>Email</label>
+                                            <input name="email" value="<?php echo $email; ?>" class="form-control" placeholder="Enter Password">
 											</div>
                                         </div>
+                                        <div class="modal-body">
+                                                                <div class="form-group">
+                                                                <label>Telp</label>
+                                                                <input name="telp" value="<?php echo $telp; ?>" class="form-control" placeholder="Enter Password">
+                                          </div>
+                                                            </div>
+
 
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -251,10 +223,12 @@ ob_start();
                 <?php
 				if(isset($_POST['up']))
 				{
-					$usname = $_POST['usname'];
-					$passwr = $_POST['pasd'];
+					$lname = $_POST['lname'];
+					$fname = $_POST['fname'];
+          $email = $_POST['email'];
+					$telp = $_POST['telp'];
 
-					$upsql = "UPDATE `login` SET `usname`='$usname',`pass`='$passwr' WHERE id = '$id'";
+					$upsql = "UPDATE `users` SET `fname`='$fname',`lname`='$lname',`email`='$email',`telp`='$telp' WHERE id = 'id'";
 					if(mysqli_query($con,$upsql))
 					{
 					echo' <script language="javascript" type="text/javascript"> alert("User name and password update") </script>';
@@ -262,7 +236,7 @@ ob_start();
 
 					}
 
-				header("Location: usersetting.php");
+				header("Location: edit_users.php");
 
 				}
 				ob_end_flush();

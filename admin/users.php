@@ -18,13 +18,13 @@
   <style media="screen">
     .login{
       font-family: sans-serif;
-      color: cornsilk;
+      color: #353328;
       padding: 0px 0px 40px;
       font-size: -webkit-xxx-large;
     }
     .register{
       font-family: sans-serif;
-      color: cornsilk;
+      color: #353328;
       padding: 0px 0px 10px;
     }
   </style>
@@ -40,7 +40,7 @@
         </div>
         <div class="top">
           <div class="register">
-            <center><a href="reg_act.php">Register Member</a></center>
+            <center><a href="reg_act.php" style="color: #353328" >Register Member</a></center>
           </div>
         </div>
 
